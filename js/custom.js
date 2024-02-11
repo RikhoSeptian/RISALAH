@@ -45,6 +45,7 @@ $(document).ready(function()
 	initMenu();
 	initHeaderSearch();
 	initHomeSlider();
+	initFeatureSlider();
 	initMilestones();
 
 	/* 
@@ -236,3 +237,43 @@ $(document).ready(function()
 	}
 
 });
+
+
+	/*
+	7. Init Feature Slider
+	*/
+
+	function initFeatureSlider()
+	{
+		if($('.feature_slider').length)
+		{
+			var featureSlider = $('.feature_slider');
+			featureSlider.owlCarousel(
+			{
+				items:1,
+				loop:true,
+				autoplay:false,
+				nav:false,
+				dots:false,
+				smartSpeed:1200
+			});
+
+			if($('.feature_slider_prev').length)
+			{
+				var prev = $('.feature_slider_prev');
+				prev.on('click', function()
+				{
+					featureSlider.trigger('prev.owl.carousel');
+				});
+			}
+
+			if($('.feature_slider_next').length)
+			{
+				var next = $('.feature_slider_next');
+				next.on('click', function()
+				{
+					featureSlider.trigger('next.owl.carousel');
+				});
+			}
+		}
+	}

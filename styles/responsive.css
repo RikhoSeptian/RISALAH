@@ -138,10 +138,10 @@
 	{
 		margin-top: 15px;
 	}
-	.feature_col:not(:last-child)
+	/* .feature_col:not(:last-child)
 	{
 		margin-bottom: 30px;
-	}
+	} */
 	.course_col:not(:last-child)
 	{
 		margin-bottom: 40px;

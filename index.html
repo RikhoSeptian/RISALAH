@@ -6,12 +6,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="styles/bootstrap5/bootstrap.min.css">
+<!-- Font Awesome -->
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Carousel -->
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<!-- Animation -->
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<!-- main -->
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<!-- Responsive -->
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
 <body>
@@ -234,10 +240,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="row features_row">
+			<div class="owl-carousel owl-theme feature_slider">
 				
 				<!-- Features Item -->
-				<div class="col-lg-3 feature_col">
+				<div class="owl-item feature_col">
 					<div class="feature text-center trans_400">
 						<div class="feature_icon"><img src="images/icon_1.png" alt=""></div>
 						<h3 class="feature_title">Para Ustadz</h3>
@@ -246,7 +252,7 @@
 				</div>
 
 				<!-- Features Item -->
-				<div class="col-lg-3 feature_col">
+				<div class="owl-item feature_col">
 					<div class="feature text-center trans_400">
 						<div class="feature_icon"><img src="images/icon_2.png" alt=""></div>
 						<h3 class="feature_title">Kajian Hadits</h3>
@@ -255,7 +261,7 @@
 				</div>
 
 				<!-- Features Item -->
-				<div class="col-lg-3 feature_col">
+				<div class="owl-item feature_col">
 					<div class="feature text-center trans_400">
 						<div class="feature_icon"><img src="images/icon_3.png" alt=""></div>
 						<h3 class="feature_title">Kursus Terbaik</h3>
@@ -264,7 +270,7 @@
 				</div>
 
 				<!-- Features Item -->
-				<div class="col-lg-3 feature_col">
+				<div class="owl-item feature_col">
 					<div class="feature text-center trans_400">
 						<div class="feature_icon"><img src="images/icon_4.png" alt=""></div>
 						<h3 class="feature_title">Penghargaan & Hadiah</h3>
@@ -272,7 +278,13 @@
 					</div>
 				</div>
 
+				
 			</div>
+
+			<!-- Feature Slider Nav -->
+
+			<div class="feature_slider_nav feature_slider_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+			<div class="feature_slider_nav feature_slider_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
 		</div>
 	</div>
 
@@ -755,8 +767,8 @@ Hak Cipta &copy;<script>document.write(new Date().getFullYear());</script> Semua
 </div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="styles/bootstrap5/popper.js"></script>
+<script src="styles/bootstrap5/bootstrap.min.js"></script>
 <script src="plugins/greensock/TweenMax.min.js"></script>
 <script src="plugins/greensock/TimelineMax.min.js"></script>
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
