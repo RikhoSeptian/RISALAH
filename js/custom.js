@@ -156,7 +156,8 @@ $(document).ready(function()
 				autoplay:true,
 				nav:false,
 				dots:false,
-				smartSpeed:1200
+				smartSpeed:1200,
+				margin:10
 			});
 
 			if($('.home_slider_prev').length)
@@ -250,12 +251,29 @@ $(document).ready(function()
 			var featureSlider = $('.feature_slider');
 			featureSlider.owlCarousel(
 			{
-				items:1,
 				loop:true,
-				autoplay:false,
 				nav:false,
 				dots:false,
-				smartSpeed:1200
+				autoplay:true,
+				stagePadding: 50,
+				autoplayTimeout:5000,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+						stagePadding: 50,
+						center:true,
+						loop:false,
+						autoplay:false,
+
+					},
+					600:{
+						items:2,
+					},
+					1280:{
+						items:3,
+					}
+				}
 			});
 
 			if($('.feature_slider_prev').length)

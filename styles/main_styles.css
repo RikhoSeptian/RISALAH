@@ -221,8 +221,9 @@ section
 }
 .super_container
 {
-	width: 100%;
+	max-width: 1280px;
 	overflow: hidden;
+	margin: auto;
 }
 .prlx_parent
 {
@@ -248,6 +249,7 @@ section
 
 .header
 {
+	margin: auto;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -947,20 +949,18 @@ section
 	width: 100%;
 	background: #FFFFFF;
 	padding-top: 93px;
+	padding-bottom: 50px;
 }
 .features_slider
 {
 	width: 100%;
-	top: 21%;
-	left: 0;
 	height: auto;
 }
 .feature_col
 {
-	margin-top: 50px;
-	margin-right: 10px;
 	width: 100%;
 	height: 100%;
+	padding: 45px 5px;
 }
 .feature
 {
@@ -970,12 +970,13 @@ section
 	padding-bottom: 28px;
 	padding-left: 15px;
 	padding-right: 15px;
-	background: #FFFFFF;
+	background: #fafafa;
 	max-width: 100%;
+	border-radius: 10px;
 }
 .feature:hover
 {
-	box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
+	box-shadow: 0px 5px 20px rgba(39, 42, 51, 0.15);
 }
 .feature_icon
 {
@@ -994,8 +995,9 @@ section
 }
 .feature_slider_nav
 {
+	background-color: #adaaaa;
 	position: absolute;
-	top: 80%;
+	top: 50%;
 	width: 25px;
 	border-radius: 50%;
 	text-align: center;
@@ -1009,11 +1011,11 @@ section
 }
 .feature_slider_prev
 {
-	left: 8px;
+	left: -18px;
 }
 .feature_slider_next
 {
-	right: 8px;
+	right: -18px;
 }
 .feature_slider_nav i
 {

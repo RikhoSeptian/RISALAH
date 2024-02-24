@@ -284,17 +284,22 @@
 
 @media only screen and (max-width: 767px)
 {
-	.top_bar
+	.top_bar_contact_list li > div:not(:first-child)
 	{
 		display: none;
 	}
+	.top_bar_contact_list li i,
+	.login_button a
+	{
+		font-size: 10px;
+	}
+	.header.scrolled .top_bar
+	{
+
+	}
 	.home
 	{
-		height: 140px;
-	}
-	.header.scrolled
-	{
-		top: 0px;
+		height: 600px;
 	}
 	.team_col .team_item
 	{
@@ -406,10 +411,64 @@
 }
 
 /************
-14. 400px
+14. 360px
 ************/
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 360px)
 {
-	
+	h2
+	{
+		font-size: 24px;
+	}
+	p
+	{
+		font-size: 13px;
+	}
+	.top_bar_content
+	{
+		justify-content: space-around;
+	}
+	.menu
+	{
+		width: 100%;
+		right: -100%;
+	}
+	.home {
+		height: 180px;
+	}
+	.home_slider {
+		margin: 10px;
+		width: 340px;
+		height: 180px;
+	}
+	.home_search_input::-webkit-input-placeholder
+	{
+		font-size: 12px !important;
+	}
+	.home_search_input:-moz-placeholder
+	{
+		font-size: 12px !important;
+	}
+	.home_search_input::-moz-placeholder
+	{
+		font-size: 12px !important;
+	} 
+	.home_search_input:-ms-input-placeholder
+	{ 
+		font-size: 12px !important;
+	}
+	.home_search_input::input-placeholder
+	{
+		font-size: 12px !important;
+	}
+	.dropdown_item_select,
+	.home_search_button
+	{
+		font-size: 12px;
+	}
+	.home_search_button
+	{
+		width: 100px;
+		height: 40px;
+	}
 }
